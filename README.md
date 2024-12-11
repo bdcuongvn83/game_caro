@@ -13,12 +13,11 @@ https://github.com/user-attachments/assets/0f5fdbc7-9865-4e76-8a8e-eec005d4b010
 ![image](https://github.com/user-attachments/assets/de24c78b-67be-42a7-9e98-08ee5297fe5b)
 ![image](https://github.com/user-attachments/assets/1dd505d5-4f81-43a2-8978-c94dac3e40cb)
 
-### 
-Algorithm for determining the winner:
+### Algorithm for determining the winner:
 Since this is a basic scenario, consider the matrix:
-Horizontal row: [0, 1, 2] or [3, 4, 5] or [6, 7, 8] — if the values are the same, the player wins.
-Vertical column: [0, 3, 6] or [1, 4, 7] or [2, 5, 8] — if the values are the same, the player wins.
-Diagonal row: [0, 4, 8] or [2, 4, 6] — if the values are the same, the player wins.
+- Horizontal row: [0, 1, 2] or [3, 4, 5] or [6, 7, 8] — if the values are the same, the player wins.
+- Vertical column: [0, 3, 6] or [1, 4, 7] or [2, 5, 8] — if the values are the same, the player wins.
+- Diagonal row: [0, 4, 8] or [2, 4, 6] — if the values are the same, the player wins.
 
 ![image](https://github.com/user-attachments/assets/86312854-098e-4c15-9a6f-a4470249dd42)
 
