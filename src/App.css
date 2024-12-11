@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột đều nhau */
+  gap: 5px; /* Khoảng cách giữa các button */
+  width: fit-content; /* Đảm bảo không có khoảng trắng thừa */
+  margin: 0 auto; /* Căn giữa container */
+}
+
+.square {
+  width: 50px; /* Chiều rộng của ô caro */
+  height: 50px; /* Chiều cao của ô caro */
+  background-color: cowhitelor; /* Không màu nền */
+  border: 1px solid black; /* Viền để tạo hiệu ứng ô vuông */
+  
+  padding: 0; /* Loại bỏ padding mặc định của button */
+  margin: 0; /* Loại bỏ khoảng cách giữa các ô (nếu cần) */
+  text-align: center; /* Căn giữa nội dung bên trong */
+  cursor: pointer; /* Thêm hiệu ứng con trỏ nếu muốn giống như nút */
+  box-sizing: border-box; 
+  display: flex; /* Để căn giữa nội dung */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang *
+  /* Bao gồm cả viền và padding trong kích thước */
+}
+.square:focus {
+  outline: none; /* Loại bỏ viền focus mặc định khi nhấn vào button */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
